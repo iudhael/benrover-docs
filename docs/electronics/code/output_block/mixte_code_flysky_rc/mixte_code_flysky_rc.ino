@@ -192,7 +192,8 @@ void loop() {
   calculateServoAngle();
 
   // Map the ch2Value to a speed value for the motor
-  motorSpeed = map(abs(ch2Value), 0, 100, 0, 255);
+   motorSpeed = 51;
+  //motorSpeed = map(abs(ch2Value), 0, 100, 0, 255);
   Serial.println(motorSpeed); 
   // Forward or backward motion based on ch2Value
   if (ch2Value > 15) {
